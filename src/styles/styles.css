@@ -1,4 +1,61 @@
-@font-face {
-  font-family: 'italianno';
-  src: url('/src/assets/fonts/Italianno-Regular.ttf') format('ttf');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Parisienne&family=Poppins:wght@400&display=swap');
+
+* {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background-image: url('/src/assets/images/restaurant.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+  height: 128px;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Parisienne', cursive;
+  color: white;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.home-container {
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-github {
+  font-size: 24px;
+  color: #6e5494;
+  transition: transform 0.5s ease-in-out;
+}
+
+.fa-github:hover {
+  color: #8a77a5;
 }
