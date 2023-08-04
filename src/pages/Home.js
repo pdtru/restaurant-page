@@ -1,6 +1,3 @@
-// import Header from '../components/Header';
-// import Footer from '../componenets/footer';
-
 class Home {
   render = () => {
     const container = document.createElement('div');
