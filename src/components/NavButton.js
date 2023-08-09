@@ -1,8 +1,8 @@
 class NavButton {
   render = (text) => {
     const container = document.createElement('button');
-    container.innerText = text;
     container.className = 'nav-button';
+    container.innerText = text;
     return container;
   };
 }

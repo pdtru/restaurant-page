@@ -1,6 +1,6 @@
 class Title {
   render = () => {
-    const container = document.createElement('h1');
+    const container = document.createElement('div');
     container.className = 'title';
     container.innerText = 'Tout Bleu';
     return container;
