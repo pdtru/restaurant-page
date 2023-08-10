@@ -8,4 +8,12 @@ const page = new Page();
 const footer = new Footer();
 
 const body = document.body;
-body.append(header.render(), page.render(), footer.render());
+
+const render = () => {
+  body.innerHTML = '';
+  body.append(header.render(), page.render(), footer.render());
+};
+
+render();
+
+export { render, header, page, footer };

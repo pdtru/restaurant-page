@@ -1,11 +1,15 @@
 import Home from './Home';
 
 class Page {
-  content = new Home();
+  constructor() {
+    this.component = new Home();
+  }
+
   render = () => {
     const container = document.createElement('div');
     container.className = 'page';
-    container.append(this.content.render());
+    container.id = 'content';
+    container.append(this.component.render());
     return container;
   };
 }

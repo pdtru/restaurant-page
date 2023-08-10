@@ -23,7 +23,7 @@ body {
 
 .header-container {
   background-color: rgba(0, 0, 0, 0.6);
-  padding-top: 16px;
+  padding: 16px 0px;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
 .title {
   position: absolute;
   top: 16px;
-  left: 32px;
+  left: 36px;
   font-family: 'Parisienne', cursive;
   color: white;
   font-size: 32px;
@@ -68,8 +68,7 @@ body {
   transition: opacity 300ms, transform 300ms;
 }
 
-.nav-button:hover::after,
-.nav-button:focus::after {
+.nav-button:hover::after {
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
 }
@@ -102,6 +101,23 @@ body {
   align-self: center;
   font-family: 'Parisienne', cursive;
   font-size: 7rem;
+}
+
+.menu {
+  width: 90%;
+  height: 90%;
+  background-color: white;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+img {
+  height: 11rem;
+  width: 22rem;
 }
 
 .footer {
