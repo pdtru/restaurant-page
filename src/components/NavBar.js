@@ -1,17 +1,17 @@
 import NavButton from './NavButton';
 
 class NavBar {
-  home = new NavButton();
-  menu = new NavButton();
-  gallery = new NavButton();
-  about = new NavButton();
+  home = new NavButton('Home');
+  menu = new NavButton('Menu');
+  gallery = new NavButton('Gallery');
+  about = new NavButton('About');
   render = () => {
     const container = document.createElement('div');
     container.className = 'nav-container';
-    container.append(this.home.render('Home'));
-    container.append(this.menu.render('Menu'));
-    container.append(this.gallery.render('Gallery'));
-    container.append(this.about.render('About'));
+    container.append(this.home.render());
+    container.append(this.menu.render());
+    container.append(this.gallery.render());
+    container.append(this.about.render());
     return container;
   };
 }
