@@ -2,6 +2,8 @@
 
 * {
   font-family: 'Nunito Sans', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 html,
@@ -10,8 +12,6 @@ body {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -74,15 +74,16 @@ body {
 }
 
 .page {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .home {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   gap: 16px;
@@ -104,9 +105,13 @@ body {
 }
 
 .menu {
+  font-family: 'Montserrat';
   width: 90%;
   height: 90%;
   background-color: white;
+}
+
+.menu-title {
 }
 
 .gallery {
@@ -116,8 +121,8 @@ body {
 }
 
 img {
-  height: 11rem;
-  width: 22rem;
+  height: 9rem;
+  width: 18rem;
 }
 
 .footer {
