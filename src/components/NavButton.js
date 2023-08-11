@@ -33,7 +33,6 @@ class NavButton {
         page.component = new Home();
         break;
     }
-
     render();
   };
 }
