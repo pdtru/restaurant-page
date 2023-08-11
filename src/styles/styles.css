@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Nunito+Sans:opsz,wght@6..12,200&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Nunito+Sans:opsz,wght@6..12,200&family=PT+Sans+Narrow&family=Parisienne&display=swap');
 
 * {
   font-family: 'Nunito Sans', sans-serif;
@@ -91,27 +91,45 @@ body {
 }
 
 .welcome {
-  margin: 0;
   align-self: center;
   font-family: 'Montserrat';
   font-size: 3rem;
 }
 
 .logo {
-  margin: 0;
   align-self: center;
   font-family: 'Parisienne', cursive;
   font-size: 7rem;
 }
 
 .menu {
-  font-family: 'Montserrat';
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   width: 90%;
   height: 90%;
   background-color: white;
 }
 
+.course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
 .menu-title {
+  font-family: 'PT Sans Narrow';
+  font-size: x-large;
+}
+
+.menu-item {
+  font-size: large;
+  font-weight: 500;
+}
+
+.sub-text {
+  font-size: medium;
 }
 
 .gallery {
