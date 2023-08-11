@@ -8,7 +8,6 @@ const page = new Page();
 const footer = new Footer();
 
 const body = document.body;
-
 const render = () => {
   body.innerHTML = '';
   body.append(header.render(), page.render(), footer.render());
