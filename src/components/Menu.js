@@ -8,15 +8,17 @@ class Menu {
   main = new Main();
   dessert = new Dessert();
   drinks = new Drinks();
+
   render = () => {
     const container = document.createElement('div');
     container.className = 'menu';
     container.append(
       this.starters.render(),
       this.main.render(),
-      this.dessert.render(),
-      this.drinks.render()
+      this.drinks.render(),
+      this.dessert.render()
     );
+
     return container;
   };
 }

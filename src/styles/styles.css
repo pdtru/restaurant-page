@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -103,18 +104,17 @@ body {
 }
 
 .menu {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 90%;
-  height: 90%;
+  flex: 1;
+  display: flex;
+  min-height: 80%;
+  gap: 16px;
   background-color: white;
 }
 
 .course {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 16px;
 }
 

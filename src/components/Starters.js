@@ -17,7 +17,7 @@ class Starters {
   );
   terrine = new MenuItem(
     'RAINBOW TERRINE',
-    'Harmonizing layers of fresh ingredients into a visually stunning and delectable composition'
+    'Harmonizing layers of fresh ingredients into a visually stunning composition'
   );
 
   render() {

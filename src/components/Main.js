@@ -12,7 +12,6 @@ class Main {
     'Tender chicken and velvety eggs in harmonious union'
   );
   meat = new MenuItem('MEAT ON BONE', 'Juicy meat adorned on primal bone');
-  quail = new MenuItem('QUAIL', 'Tender quail stuffed with creamy risotto');
   soba = new MenuItem(
     'SHOOTING STAR SOBA',
     'Delicate buckwheat noodles in savory broth'
@@ -26,7 +25,6 @@ class Main {
       this.hainanese.render(),
       this.oyakodon.render(),
       this.meat.render(),
-      this.quail.render(),
       this.soba.render()
     );
     return container;
