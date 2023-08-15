@@ -42,6 +42,7 @@ body {
 
 .nav-container {
   display: flex;
+  flex: 1;
   justify-content: center;
   gap: 28px;
 }
@@ -105,8 +106,17 @@ body {
 
 .menu {
   flex: 1;
+  padding: 8%;
   display: flex;
-  min-height: 80%;
+  gap: 16px;
+  background-color: white;
+}
+
+.mobile-menu {
+  margin: 10%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
   background-color: white;
 }
@@ -118,18 +128,26 @@ body {
   gap: 16px;
 }
 
+.mobile-course {
+  margin: 10%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .menu-title {
   font-family: 'PT Sans Narrow';
-  font-size: x-large;
+  font-size: 200%;
 }
 
 .menu-item {
-  font-size: large;
+  font-size: 100%;
   font-weight: 500;
 }
 
 .sub-text {
-  font-size: medium;
+  font-size: 80%;
 }
 
 .gallery {
