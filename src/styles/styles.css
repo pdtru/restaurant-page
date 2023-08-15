@@ -108,7 +108,7 @@ body {
   flex: 1;
   padding: 8%;
   display: flex;
-  gap: 16px;
+  gap: 32px;
   background-color: white;
 }
 
@@ -151,14 +151,27 @@ body {
 }
 
 .gallery {
+  margin: 10%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+.mobile-gallery {
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 img {
-  height: 9rem;
-  width: 18rem;
+  height: 10em;
+  width: 20em;
+}
+
+.mobile-img {
+  height: 80%;
+  width: 100%;
 }
 
 .footer {
