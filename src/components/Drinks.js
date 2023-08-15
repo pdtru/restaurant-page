@@ -2,7 +2,7 @@ import MenuTitle from './MenuTitle';
 import MenuItem from './MenuItem';
 
 class Drinks {
-  menuTitle = new MenuTitle('Drinks');
+  menuTitle = new MenuTitle('DRINKS');
   blanc = new MenuItem(
     'BLANC DE BLANC',
     'Familiar aromas of grape jelly, cherry turnover, and cinnamon'
@@ -12,10 +12,6 @@ class Drinks {
     'SPARKLING ROSÉ',
     'Creamy with strawberry and crisp green apple flavors'
   );
-  sirah = new MenuItem(
-    'PETITE SIRAH',
-    'Aromas of mixed berries, herbs, and spice with balanced acidity and tannins'
-  );
 
   render() {
     const container = document.createElement('div');
@@ -24,8 +20,7 @@ class Drinks {
       this.menuTitle.render(),
       this.blanc.render(),
       this.pinot.render(),
-      this.rosé.render(),
-      this.sirah.render()
+      this.rosé.render()
     );
     return container;
   }
