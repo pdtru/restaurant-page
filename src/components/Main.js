@@ -17,9 +17,20 @@ class Main {
     'Delicate buckwheat noodles in savory broth'
   );
 
+  className = 'mobile-course';
+
+  calculateLayout = () => {
+    if (window.innerWidth < window.innerHeight) {
+      this.className = 'mobile-course';
+    } else {
+      this.className = 'course';
+    }
+  };
+
   render() {
+    this.calculateLayout();
     const container = document.createElement('div');
-    container.className = 'course';
+    container.className = this.className;
     container.append(
       this.menuTitle.render(),
       this.hainanese.render(),
