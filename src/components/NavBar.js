@@ -20,10 +20,12 @@ class NavBar {
     this.calculateLayout();
     const container = document.createElement('div');
     container.className = this.className;
-    container.append(this.home.render());
-    container.append(this.menu.render());
-    container.append(this.gallery.render());
-    container.append(this.about.render());
+    container.append(
+      this.home.render(),
+      this.menu.render(),
+      this.gallery.render(),
+      this.about.render()
+    );
     return container;
   };
 }

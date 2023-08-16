@@ -1,14 +1,14 @@
 class Gallery {
-  className = 'mobile-gallery';
-  imgClassName = 'mobile-img';
+  className;
+  imgClassName;
 
   calculateLayout = () => {
     if (window.innerWidth < window.innerHeight) {
       this.className = 'mobile-gallery';
-      this.imgClassName = 'mobile-img';
+      this.imgClassName = 'mobile-gallery-img';
     } else {
       this.className = 'gallery';
-      this.imgClassName = 'img';
+      this.imgClassName = 'gallery-img';
     }
   };
 

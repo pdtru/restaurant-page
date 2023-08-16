@@ -113,6 +113,7 @@ body {
 }
 
 .page {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,13 +129,13 @@ body {
   color: white;
 }
 
-.welcome {
+.home-hero {
   align-self: center;
   font-family: 'Montserrat';
   font-size: 3rem;
 }
 
-.logo {
+.home-logo {
   align-self: center;
   font-family: 'Parisienne', cursive;
   font-size: 7rem;
@@ -182,7 +183,7 @@ body {
   font-weight: 500;
 }
 
-.sub-text {
+.menu-sub-text {
   font-size: 80%;
 }
 
@@ -199,14 +200,79 @@ body {
   align-content: center;
 }
 
-img {
+.gallery-img {
   height: 10em;
   width: 20em;
 }
 
-.mobile-img {
+.mobile-gallery-img {
   height: 80%;
   width: 100%;
+}
+
+.about-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+}
+
+.about-story-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 60%;
+}
+
+.about-story-logo {
+  font-family: 'Parisienne', cursive;
+  font-size: 200%;
+}
+
+.about-story-header {
+  font-family: 'PT Sans Narrow';
+  font-size: 250%;
+  margin-top: -20px;
+}
+
+.about-chef-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  width: 60%;
+}
+
+.about-chef-header {
+  font-family: 'Parisienne', cursive;
+  font-size: 200%;
+}
+
+.about-chef-sub-header {
+  font-family: 'PT Sans Narrow';
+  font-size: 250%;
+  margin-top: -20px;
+}
+
+.about-chef {
+  flex: 1;
+  display: flex;
+}
+
+.about-chef-text {
+  flex: 1;
+}
+
+.sanji {
+  flex: 1;
+  height: 20em;
+  width: 15em;
 }
 
 .footer {
