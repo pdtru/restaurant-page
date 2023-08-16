@@ -1,13 +1,15 @@
+import AboutChef from './AboutChef';
+import AboutStory from './AboutStory';
+
 class About {
+  aboutStory = new AboutStory();
+  aboutChef = new AboutChef();
+
   render = () => {
     const container = document.createElement('div');
-    container.className = 'about';
-    const header = document.createElement('p');
-    header.className = 'about-header';
-    const subText = document.createElement('p');
-    subText.className = 'about-sub-text';
+    container.className = 'about-container';
 
-    container.append(header, subText);
+    container.append(this.aboutStory.render(), this.aboutChef.render());
     return container;
   };
 }

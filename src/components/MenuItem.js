@@ -10,7 +10,7 @@ class MenuItem {
     menuItem.innerText = this.text;
 
     const itemSubText = document.createElement('p');
-    itemSubText.className = 'sub-text';
+    itemSubText.className = 'menu-sub-text';
     itemSubText.innerText = this.subtext;
 
     menuItem.appendChild(itemSubText);
