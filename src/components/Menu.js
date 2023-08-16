@@ -9,7 +9,7 @@ class Menu {
   dessert = new Dessert();
   drinks = new Drinks();
 
-  className = 'mobile-menu';
+  className;
 
   calculateLayout = () => {
     if (window.innerWidth < window.innerHeight) {
