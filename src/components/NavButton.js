@@ -8,9 +8,20 @@ class NavButton {
   constructor(text) {
     this.text = text;
   }
+  className;
+
+  calculateLayout = () => {
+    if (window.innerWidth < window.innerHeight) {
+      this.className = 'mobile-nav-button';
+    } else {
+      this.className = 'nav-button';
+    }
+  };
+
   render = () => {
+    this.calculateLayout();
     const container = document.createElement('button');
-    container.className = 'nav-button';
+    container.className = this.className;
     container.innerText = this.text;
     container.onclick = this.onClick;
     return container;
