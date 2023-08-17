@@ -215,8 +215,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
-  height: 80%;
+  gap: 32px;
+  padding: 3%;
   background-color: white;
 }
 
@@ -229,15 +229,47 @@ body {
   width: 60%;
 }
 
+.mobile-about-story-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin: 10%;
+  width: 60%;
+}
+
 .about-story-logo {
   font-family: 'Parisienne', cursive;
   font-size: 200%;
 }
 
+.mobile-about-story-logo {
+  font-family: 'Parisienne', cursive;
+  font-size: 400%;
+}
+
 .about-story-header {
   font-family: 'PT Sans Narrow';
-  font-size: 250%;
+  font-size: 200%;
+  font-weight: 600;
   margin-top: -20px;
+}
+
+.mobile-about-story-header {
+  font-family: 'PT Sans Narrow';
+  font-size: 300%;
+  font-weight: 600;
+  margin-top: -20px;
+}
+
+.about-story-text {
+  width: 60%;
+}
+
+.mobile-about-story-text {
+  padding-top: 32px;
+  font-size: 150%;
 }
 
 .about-chef-container {
@@ -249,30 +281,69 @@ body {
   width: 60%;
 }
 
+.mobile-about-chef-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  margin: 0% 10% 10% 10%;
+  width: 60%;
+}
+
 .about-chef-header {
   font-family: 'Parisienne', cursive;
   font-size: 200%;
 }
 
+.mobile-about-chef-header {
+  font-family: 'Parisienne', cursive;
+  font-size: 400%;
+}
+
 .about-chef-sub-header {
   font-family: 'PT Sans Narrow';
-  font-size: 250%;
+  font-weight: 600;
+  font-size: 200%;
+  margin-top: -20px;
+}
+
+.mobile-about-chef-sub-header {
+  font-family: 'PT Sans Narrow';
+  font-size: 300%;
+  font-weight: 600;
   margin-top: -20px;
 }
 
 .about-chef {
   flex: 1;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
 }
 
 .about-chef-text {
-  flex: 1;
+  width: 60%;
+}
+
+.mobile-about-chef-text {
+  padding-top: 16px;
+  font-size: 150%;
 }
 
 .sanji {
-  flex: 1;
-  height: 20em;
-  width: 15em;
+  border-radius: 8in;
+  height: 20%;
+  width: 20%;
+}
+
+.mobile-sanji {
+  padding-top: 32px;
+  border-radius: 8in;
+  height: 60%;
+  width: 60%;
 }
 
 .footer {
