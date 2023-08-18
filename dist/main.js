@@ -296,7 +296,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   footer: () => (/* binding */ footer),\n/* harmony export */   header: () => (/* binding */ header),\n/* harmony export */   page: () => (/* binding */ page),\n/* harmony export */   render: () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var _src_styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../src/styles/styles.css */ \"./src/styles/styles.css\");\n/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Page */ \"./src/components/Page.js\");\n/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header */ \"./src/components/Header.js\");\n/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Footer */ \"./src/components/Footer.js\");\n\r\n\r\n\r\n\r\n\r\nconst header = new _components_Header__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\r\nconst page = new _components_Page__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\nconst footer = new _components_Footer__WEBPACK_IMPORTED_MODULE_3__[\"default\"]();\r\n\r\nconst body = document.body;\r\nconst render = () => {\r\n  body.innerHTML = '';\r\n  body.append(header.render(), page.render(), footer.render());\r\n};\r\nrender();\r\n\r\n(function () {\r\n  addEventListener('load', render);\r\n  addEventListener('resize', render);\r\n})();\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   footer: () => (/* binding */ footer),\n/* harmony export */   header: () => (/* binding */ header),\n/* harmony export */   page: () => (/* binding */ page),\n/* harmony export */   render: () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var _src_styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../src/styles/styles.css */ \"./src/styles/styles.css\");\n/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Page */ \"./src/components/Page.js\");\n/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header */ \"./src/components/Header.js\");\n/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Footer */ \"./src/components/Footer.js\");\n/* harmony import */ var _src_assets_images_logo_png_v_2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../../../src/assets/images/logo.png?v=2 */ \"./src/assets/images/logo.png?v=2\");\n\r\n\r\n\r\n\r\n\r\n\r\nfunction setFavicons(favImg) {\r\n  let headTitle = document.querySelector('head');\r\n  let setFavicon = document.createElement('link');\r\n  setFavicon.setAttribute('rel', 'shortcut icon');\r\n  setFavicon.setAttribute('href', favImg);\r\n  headTitle.appendChild(setFavicon);\r\n}\r\nsetFavicons(_src_assets_images_logo_png_v_2__WEBPACK_IMPORTED_MODULE_4__);\r\n\r\nconst header = new _components_Header__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\r\nconst page = new _components_Page__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\nconst footer = new _components_Footer__WEBPACK_IMPORTED_MODULE_3__[\"default\"]();\r\n\r\nconst body = document.body;\r\nconst render = () => {\r\n  body.innerHTML = '';\r\n  body.append(header.render(), page.render(), footer.render());\r\n};\r\nrender();\r\n\r\n(function () {\r\n  addEventListener('load', render);\r\n  addEventListener('resize', render);\r\n})();\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -347,6 +347,16 @@ eval("module.exports = __webpack_require__.p + \"325403c6d3d25a251378.jpg\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"4c85cfbc6c20777d9f8a.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/lemon-cake.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/logo.png?v=2":
+/*!****************************************!*\
+  !*** ./src/assets/images/logo.png?v=2 ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"495ca3c3b7e41888fcbd.png?v=2\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/logo.png?");
 
 /***/ }),
 
