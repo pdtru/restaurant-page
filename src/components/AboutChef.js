@@ -1,3 +1,5 @@
+import sanjiPortrait from '/src/assets/images/sanji.jpg';
+
 class AboutChef {
   cotainerClassName;
   headerClassName;
@@ -44,7 +46,7 @@ class AboutChef {
 
     const sanji = document.createElement('img');
     sanji.className = this.sanjiClassName;
-    sanji.src = '/src/assets/images/sanji.jpg';
+    sanji.src = sanjiPortrait;
 
     chefContainer.append(sanji, text);
     container.append(header, subHeader, chefContainer);

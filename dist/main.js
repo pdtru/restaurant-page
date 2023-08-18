@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nclass AboutChef {\r\n  cotainerClassName;\r\n  headerClassName;\r\n  subHeaderClassName;\r\n  textClassName;\r\n  sanjiClassName;\r\n\r\n  calculateLayout = () => {\r\n    if (window.innerWidth < window.innerHeight) {\r\n      this.cotainerClassName = 'mobile-about-chef-container';\r\n      this.headerClassName = 'mobile-about-chef-header';\r\n      this.subHeaderClassName = 'mobile-about-chef-sub-header';\r\n      this.textClassName = 'mobile-about-chef-text';\r\n      this.sanjiClassName = 'mobile-sanji';\r\n    } else {\r\n      this.cotainerClassName = 'about-chef-container';\r\n      this.headerClassName = 'about-chef-header';\r\n      this.subHeaderClassName = 'about-chef-sub-header';\r\n      this.textClassName = 'about-chef-text';\r\n      this.sanjiClassName = 'sanji';\r\n    }\r\n  };\r\n\r\n  render = () => {\r\n    this.calculateLayout();\r\n    const container = document.createElement('div');\r\n    container.className = this.cotainerClassName;\r\n\r\n    const header = document.createElement('p');\r\n    header.className = this.headerClassName;\r\n    header.innerText = 'Meet Our';\r\n\r\n    const subHeader = document.createElement('p');\r\n    subHeader.className = this.subHeaderClassName;\r\n    subHeader.innerText = 'CHEF';\r\n\r\n    const chefContainer = document.createElement('div');\r\n    chefContainer.className = 'about-chef';\r\n\r\n    const text = document.createElement('p');\r\n    text.className = this.textClassName;\r\n    text.innerText =\r\n      'At the heart of our kitchen stands the indomitable culinary genius, Owner and Head Chef Sanji. Sanji brings to life a menu that mirrors his adventurous spirit - each dish a masterpiece, an embodiment of his passion and mastery over both Japanese and French cuisine.';\r\n\r\n    const sanji = document.createElement('img');\r\n    sanji.className = this.sanjiClassName;\r\n    sanji.src = '/src/assets/images/sanji.jpg';\r\n\r\n    chefContainer.append(sanji, text);\r\n    container.append(header, subHeader, chefContainer);\r\n    return container;\r\n  };\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AboutChef);\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/components/AboutChef.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _src_assets_images_sanji_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../src/assets/images/sanji.jpg */ \"./src/assets/images/sanji.jpg\");\n\r\n\r\nclass AboutChef {\r\n  cotainerClassName;\r\n  headerClassName;\r\n  subHeaderClassName;\r\n  textClassName;\r\n  sanjiClassName;\r\n\r\n  calculateLayout = () => {\r\n    if (window.innerWidth < window.innerHeight) {\r\n      this.cotainerClassName = 'mobile-about-chef-container';\r\n      this.headerClassName = 'mobile-about-chef-header';\r\n      this.subHeaderClassName = 'mobile-about-chef-sub-header';\r\n      this.textClassName = 'mobile-about-chef-text';\r\n      this.sanjiClassName = 'mobile-sanji';\r\n    } else {\r\n      this.cotainerClassName = 'about-chef-container';\r\n      this.headerClassName = 'about-chef-header';\r\n      this.subHeaderClassName = 'about-chef-sub-header';\r\n      this.textClassName = 'about-chef-text';\r\n      this.sanjiClassName = 'sanji';\r\n    }\r\n  };\r\n\r\n  render = () => {\r\n    this.calculateLayout();\r\n    const container = document.createElement('div');\r\n    container.className = this.cotainerClassName;\r\n\r\n    const header = document.createElement('p');\r\n    header.className = this.headerClassName;\r\n    header.innerText = 'Meet Our';\r\n\r\n    const subHeader = document.createElement('p');\r\n    subHeader.className = this.subHeaderClassName;\r\n    subHeader.innerText = 'CHEF';\r\n\r\n    const chefContainer = document.createElement('div');\r\n    chefContainer.className = 'about-chef';\r\n\r\n    const text = document.createElement('p');\r\n    text.className = this.textClassName;\r\n    text.innerText =\r\n      'At the heart of our kitchen stands the indomitable culinary genius, Owner and Head Chef Sanji. Sanji brings to life a menu that mirrors his adventurous spirit - each dish a masterpiece, an embodiment of his passion and mastery over both Japanese and French cuisine.';\r\n\r\n    const sanji = document.createElement('img');\r\n    sanji.className = this.sanjiClassName;\r\n    sanji.src = _src_assets_images_sanji_jpg__WEBPACK_IMPORTED_MODULE_0__;\r\n\r\n    chefContainer.append(sanji, text);\r\n    container.append(header, subHeader, chefContainer);\r\n    return container;\r\n  };\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AboutChef);\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/components/AboutChef.js?");
 
 /***/ }),
 
@@ -186,7 +186,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nclass Gallery {\r\n  className;\r\n  imgClassName;\r\n\r\n  calculateLayout = () => {\r\n    if (window.innerWidth < window.innerHeight) {\r\n      this.className = 'mobile-gallery';\r\n      this.imgClassName = 'mobile-gallery-img';\r\n    } else {\r\n      this.className = 'gallery';\r\n      this.imgClassName = 'gallery-img';\r\n    }\r\n  };\r\n\r\n  render = () => {\r\n    this.calculateLayout();\r\n    const container = document.createElement('div');\r\n    container.className = this.className;\r\n\r\n    const noël = document.createElement('img');\r\n    noël.className = this.imgClassName;\r\n    noël.src = '/src/assets/images/food/bûche-de-noël.jpg';\r\n\r\n    const bûche = document.createElement('img');\r\n    bûche.className = this.imgClassName;\r\n    bûche.src = '/src/assets/images/food/five-amuse-bouches.jpg';\r\n\r\n    const hainanese = document.createElement('img');\r\n    hainanese.className = this.imgClassName;\r\n    hainanese.src = '/src/assets/images/food/hainanese-chicken.jpg';\r\n\r\n    const véritable = document.createElement('img');\r\n    véritable.className = this.imgClassName;\r\n    véritable.src = '/src/assets/images/food/le-plat-véritable.jpg';\r\n\r\n    const lemon = document.createElement('img');\r\n    lemon.className = this.imgClassName;\r\n    lemon.src = '/src/assets/images/food/lemon-cake.jpg';\r\n\r\n    const meat = document.createElement('img');\r\n    meat.className = this.imgClassName;\r\n    meat.src = '/src/assets/images/food/meat-on-stick.jpg';\r\n\r\n    const mushroom = document.createElement('img');\r\n    mushroom.className = this.imgClassName;\r\n    mushroom.src = '/src/assets/images/food/mushroom-mille-feuille.jpg';\r\n\r\n    const okakiage = document.createElement('img');\r\n    okakiage.className = this.imgClassName;\r\n    okakiage.src = '/src/assets/images/food/okakiage-tempura.jpg';\r\n\r\n    const quail = document.createElement('img');\r\n    quail.className = this.imgClassName;\r\n    quail.src = '/src/assets/images/food/quail-stuffed-with-risotto.jpg';\r\n\r\n    const soba = document.createElement('img');\r\n    soba.className = this.imgClassName;\r\n    soba.src = '/src/assets/images/food/shooting-star-soba.jpg';\r\n\r\n    const souffle = document.createElement('img');\r\n    souffle.className = this.imgClassName;\r\n    souffle.src = '/src/assets/images/food/souffle-leger-de-grace.jpg';\r\n\r\n    const terrine = document.createElement('img');\r\n    terrine.className = this.imgClassName;\r\n    terrine.src = '/src/assets/images/food/terrine.jpg';\r\n\r\n    container.append(\r\n      noël,\r\n      bûche,\r\n      hainanese,\r\n      véritable,\r\n      lemon,\r\n      meat,\r\n      mushroom,\r\n      okakiage,\r\n      quail,\r\n      soba,\r\n      souffle,\r\n      terrine\r\n    );\r\n    return container;\r\n  };\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Gallery);\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/components/Gallery.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _src_assets_images_b_che_de_no_l_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../src/assets/images/bûche-de-noël.jpg */ \"./src/assets/images/bûche-de-noël.jpg\");\n/* harmony import */ var _src_assets_images_five_amuse_bouches_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../../src/assets/images/five-amuse-bouches.jpg */ \"./src/assets/images/five-amuse-bouches.jpg\");\n/* harmony import */ var _src_assets_images_hainanese_chicken_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../src/assets/images/hainanese-chicken.jpg */ \"./src/assets/images/hainanese-chicken.jpg\");\n/* harmony import */ var _src_assets_images_le_plat_v_ritable_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../src/assets/images/le-plat-véritable.jpg */ \"./src/assets/images/le-plat-véritable.jpg\");\n/* harmony import */ var _src_assets_images_lemon_cake_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../../../src/assets/images/lemon-cake.jpg */ \"./src/assets/images/lemon-cake.jpg\");\n/* harmony import */ var _src_assets_images_meat_on_stick_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../../../src/assets/images/meat-on-stick.jpg */ \"./src/assets/images/meat-on-stick.jpg\");\n/* harmony import */ var _src_assets_images_mushroom_mille_feuille_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../../../../src/assets/images/mushroom-mille-feuille.jpg */ \"./src/assets/images/mushroom-mille-feuille.jpg\");\n/* harmony import */ var _src_assets_images_okakiage_tempura_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../../../../src/assets/images/okakiage-tempura.jpg */ \"./src/assets/images/okakiage-tempura.jpg\");\n/* harmony import */ var _src_assets_images_quail_stuffed_with_risotto_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../../../../src/assets/images/quail-stuffed-with-risotto.jpg */ \"./src/assets/images/quail-stuffed-with-risotto.jpg\");\n/* harmony import */ var _src_assets_images_shooting_star_soba_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../../../../src/assets/images/shooting-star-soba.jpg */ \"./src/assets/images/shooting-star-soba.jpg\");\n/* harmony import */ var _src_assets_images_souffle_leger_de_grace_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../../../../src/assets/images/souffle-leger-de-grace.jpg */ \"./src/assets/images/souffle-leger-de-grace.jpg\");\n/* harmony import */ var _src_assets_images_terrine_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../../../../src/assets/images/terrine.jpg */ \"./src/assets/images/terrine.jpg\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nclass Gallery {\r\n  className;\r\n  imgClassName;\r\n\r\n  calculateLayout = () => {\r\n    if (window.innerWidth < window.innerHeight) {\r\n      this.className = 'mobile-gallery';\r\n      this.imgClassName = 'mobile-gallery-img';\r\n    } else {\r\n      this.className = 'gallery';\r\n      this.imgClassName = 'gallery-img';\r\n    }\r\n  };\r\n\r\n  render = () => {\r\n    this.calculateLayout();\r\n    const container = document.createElement('div');\r\n    container.className = this.className;\r\n\r\n    const noël = document.createElement('img');\r\n    noël.className = this.imgClassName;\r\n    noël.src = _src_assets_images_b_che_de_no_l_jpg__WEBPACK_IMPORTED_MODULE_0__;\r\n\r\n    const bûche = document.createElement('img');\r\n    bûche.className = this.imgClassName;\r\n    bûche.src = _src_assets_images_five_amuse_bouches_jpg__WEBPACK_IMPORTED_MODULE_1__;\r\n\r\n    const hainanese = document.createElement('img');\r\n    hainanese.className = this.imgClassName;\r\n    hainanese.src = _src_assets_images_hainanese_chicken_jpg__WEBPACK_IMPORTED_MODULE_2__;\r\n\r\n    const véritable = document.createElement('img');\r\n    véritable.className = this.imgClassName;\r\n    véritable.src = _src_assets_images_le_plat_v_ritable_jpg__WEBPACK_IMPORTED_MODULE_3__;\r\n\r\n    const lemon = document.createElement('img');\r\n    lemon.className = this.imgClassName;\r\n    lemon.src = _src_assets_images_lemon_cake_jpg__WEBPACK_IMPORTED_MODULE_4__;\r\n\r\n    const meat = document.createElement('img');\r\n    meat.className = this.imgClassName;\r\n    meat.src = _src_assets_images_meat_on_stick_jpg__WEBPACK_IMPORTED_MODULE_5__;\r\n\r\n    const mushroom = document.createElement('img');\r\n    mushroom.className = this.imgClassName;\r\n    mushroom.src = _src_assets_images_mushroom_mille_feuille_jpg__WEBPACK_IMPORTED_MODULE_6__;\r\n\r\n    const okakiage = document.createElement('img');\r\n    okakiage.className = this.imgClassName;\r\n    okakiage.src = _src_assets_images_okakiage_tempura_jpg__WEBPACK_IMPORTED_MODULE_7__;\r\n\r\n    const quail = document.createElement('img');\r\n    quail.className = this.imgClassName;\r\n    quail.src = _src_assets_images_quail_stuffed_with_risotto_jpg__WEBPACK_IMPORTED_MODULE_8__;\r\n\r\n    const soba = document.createElement('img');\r\n    soba.className = this.imgClassName;\r\n    soba.src = _src_assets_images_shooting_star_soba_jpg__WEBPACK_IMPORTED_MODULE_9__;\r\n\r\n    const souffle = document.createElement('img');\r\n    souffle.className = this.imgClassName;\r\n    souffle.src = _src_assets_images_souffle_leger_de_grace_jpg__WEBPACK_IMPORTED_MODULE_10__;\r\n\r\n    const terrine = document.createElement('img');\r\n    terrine.className = this.imgClassName;\r\n    terrine.src = _src_assets_images_terrine_jpg__WEBPACK_IMPORTED_MODULE_11__;\r\n\r\n    container.append(\r\n      noël,\r\n      bûche,\r\n      hainanese,\r\n      véritable,\r\n      lemon,\r\n      meat,\r\n      mushroom,\r\n      okakiage,\r\n      quail,\r\n      soba,\r\n      souffle,\r\n      terrine\r\n    );\r\n    return container;\r\n  };\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Gallery);\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/components/Gallery.js?");
 
 /***/ }),
 
@@ -300,6 +300,96 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/images/bûche-de-noël.jpg":
+/*!*********************************************!*\
+  !*** ./src/assets/images/bûche-de-noël.jpg ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"068a6b060ae9467be82c.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/b%C3%BBche-de-no%C3%ABl.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/five-amuse-bouches.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/images/five-amuse-bouches.jpg ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"15ea3cd9156702fae3ec.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/five-amuse-bouches.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/hainanese-chicken.jpg":
+/*!*************************************************!*\
+  !*** ./src/assets/images/hainanese-chicken.jpg ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"2860550f556301711dd1.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/hainanese-chicken.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/le-plat-véritable.jpg":
+/*!*************************************************!*\
+  !*** ./src/assets/images/le-plat-véritable.jpg ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"325403c6d3d25a251378.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/le-plat-v%C3%A9ritable.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/lemon-cake.jpg":
+/*!******************************************!*\
+  !*** ./src/assets/images/lemon-cake.jpg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"4c85cfbc6c20777d9f8a.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/lemon-cake.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/meat-on-stick.jpg":
+/*!*********************************************!*\
+  !*** ./src/assets/images/meat-on-stick.jpg ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"610016163f86b7d7820f.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/meat-on-stick.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/mushroom-mille-feuille.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/images/mushroom-mille-feuille.jpg ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"d378cd97b075ad7962ae.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/mushroom-mille-feuille.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/okakiage-tempura.jpg":
+/*!************************************************!*\
+  !*** ./src/assets/images/okakiage-tempura.jpg ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"80563410d1275ed96f54.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/okakiage-tempura.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/quail-stuffed-with-risotto.jpg":
+/*!**********************************************************!*\
+  !*** ./src/assets/images/quail-stuffed-with-risotto.jpg ***!
+  \**********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"97220425db2ea45ed23b.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/quail-stuffed-with-risotto.jpg?");
+
+/***/ }),
+
 /***/ "./src/assets/images/restaurant.jpg":
 /*!******************************************!*\
   !*** ./src/assets/images/restaurant.jpg ***!
@@ -307,6 +397,46 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"89daf5b079f177b36ffc.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/restaurant.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/sanji.jpg":
+/*!*************************************!*\
+  !*** ./src/assets/images/sanji.jpg ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"159c1ecad04cda81af7b.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/sanji.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/shooting-star-soba.jpg":
+/*!**************************************************!*\
+  !*** ./src/assets/images/shooting-star-soba.jpg ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ed2ae9816bb4654e8ae2.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/shooting-star-soba.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/souffle-leger-de-grace.jpg":
+/*!******************************************************!*\
+  !*** ./src/assets/images/souffle-leger-de-grace.jpg ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"56b29bc181b998ac34c6.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/souffle-leger-de-grace.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/terrine.jpg":
+/*!***************************************!*\
+  !*** ./src/assets/images/terrine.jpg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"2e0aa50bf8cb3642de19.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/images/terrine.jpg?");
 
 /***/ })
 
